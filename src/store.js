@@ -3,6 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import venueReducer from './venueSlice';
 //Added necessary imports
 import avReducer from './avSlice';
+import mealsReducer from './mealsSlice';
 
 
 export default configureStore({
@@ -10,5 +11,6 @@ export default configureStore({
     venue: venueReducer,
     //Added all reducers
     av: avReducer,
+    meals: mealsReducer,
   },
 });
